@@ -1,0 +1,10 @@
+# Задел на будущее, пока что не используется
+version: '3.8'
+services:
+  app:
+    image: go-db:develop
+    volumes:
+      - ../configs:/application/configs
+      - ../.env:/application/.env
+    ports:
+      - "8080:8080"
